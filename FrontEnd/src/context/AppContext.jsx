@@ -5,12 +5,18 @@ import HeaderTools from "../components/HeaderTools";
 import CategoriesList from "../components/CategoriesList";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
+import UserTools from "../components/UserTools";
+import MyVideos from "../components/MyVideos";
+import NewVideo from "../components/NewVideo";
 
 const components = {
   Login: <Login />,
   SignUp: <SignUp />,
   HeaderTools: <HeaderTools />,
   CategoriesList: <CategoriesList />,
+  UserTools: <UserTools />,
+  MyVideos: <MyVideos />,
+  NewVideo: <NewVideo />,
 };
 
 export const AppContext = createContext();
@@ -48,6 +54,22 @@ export function AppContextProvider(props) {
         setComponent({
           body: components.Login,
           header: components.HeaderTools,
+        });
+
+        break;
+
+      case "/MyVideos":
+        setComponent({
+          body: components.MyVideos,
+          header: components.UserTools,
+        });
+
+        break;
+
+      case "/NewVideo":
+        setComponent({
+          body: components.NewVideo,
+          header: components.UserTools,
         });
 
         break;

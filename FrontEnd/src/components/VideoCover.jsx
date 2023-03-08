@@ -6,7 +6,7 @@ function VideoCover({ video }) {
       <figure className="relative">
         <a href="">
           <img
-            className="w-4/5 h-44 rounded-xl transition-all duration-300 blur-none hover:blur-sm "
+            className="w-4/5 h-44 rounded-xl transition-all duration-300 blur-none hover:blur-sm"
             src={image}
             alt="des"
           ></img>

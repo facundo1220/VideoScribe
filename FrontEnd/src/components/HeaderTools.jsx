@@ -16,8 +16,6 @@ function HeaderTools() {
     }
   };
 
-  console.log(setSearch());
-
   return (
     <div className="flex justify-between">
       <div>

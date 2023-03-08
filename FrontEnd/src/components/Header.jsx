@@ -1,10 +1,8 @@
 function header({ content }) {
   return (
-    <div className="fixed pt-3 min-w-full bg-[#111827]">
-      <nav className=" p-2">
-        <div>{content}</div>
-      </nav>
-    </div >
+    <nav className="pt-3 min-w-full bg-[#111827] p-2 sticky top-0 z-50">
+      <div>{content}</div>
+    </nav>
   );
 }
 

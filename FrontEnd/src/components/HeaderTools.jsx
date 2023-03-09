@@ -1,6 +1,6 @@
 import Search from "./Search";
 import Logo from "./Logo";
-import Loginbutton from "./Loginbutton";
+import SessionButtons from "./SessionButtons";
 
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
@@ -26,7 +26,7 @@ function HeaderTools() {
 
       <div className="pt-1">{setSearch() ? <Search /> : null}</div>
       <div className="pt-1 pr-5 ">
-        <Loginbutton />
+        <SessionButtons />
       </div>
     </div>
   );

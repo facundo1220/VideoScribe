@@ -6,12 +6,21 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const loginUser = (e) => {
+    e.preventDefault();
+
+    window.location.href = "/MyVideos";
+  };
+
   return (
     <div className="max-w-md mx-auto pt-20">
       <div className="pb-5 justify-center grid place-items-center">
         <Logo />
       </div>
-      <form className="bg-[#212936] shadow-lg p-10 mb-4 rounded-xl grid place-items-center">
+      <form
+        onSubmit={loginUser}
+        className="bg-[#212936] shadow-lg p-10 mb-4 rounded-xl grid place-items-center"
+      >
         <h1 className="text-2xl font-bold text-white mb-3 pt-1 pb-5">
           Login with your email address
         </h1>

@@ -1,5 +1,3 @@
-import { AiOutlineUser } from "react-icons/ai";
-
 function Loginbutton() {
   return (
     <div className="pr-4 min-w-full flex justify-end">

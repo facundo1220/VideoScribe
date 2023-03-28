@@ -1,6 +1,10 @@
 <div align="center">
 
-# <div>VideoScribe</div>
+<div align=center>
+
+![Logo](./FrontEnd/src/images/Logo.png)
+
+</div>
 
 Julian Adolfo Vega - 2232569
 
@@ -30,7 +34,11 @@ We can see this principal fields in the following architecture:
 
 </div>
 
+## Solution description
 
+* **How will your solution be used?**
+* **What are the current solutions/workarounds (if any)?**
+* **How would you solve the problem manually?**
 
 <div>
 

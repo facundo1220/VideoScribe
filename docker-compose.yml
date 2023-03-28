@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  frontend:
+    image: "facundo1220/videoscribe-frontend:1.0"
+    ports:
+      - "80:5173"
+  backend:
+    image: "julianvega/videoscribe-backend:1.1"
+    env_file:
+      - videoscribe.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - /home/julian_vega/.service_accounts:/videoScribe/.service_accounts:ro
+  isvc:
+    image: "julianvega/videoscribe-isvc:1.1"
+    ports:
+      - "8080:8080"

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "videoscribe-backend"
+version = "0.1.0"
+description = ""
+authors = ["Julian Vega <ja.vega.g10@gmail.com>"]
+readme = "README.md"
+packages = [{include = "videoscribe_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.21.1"
+fastapi = "^0.95.0"
+pillow = "^9.4.0"
+pydantic = "^1.10.7"
+psycopg2 = "^2.9.5"
+python-multipart = "^0.0.6"
+google-cloud-storage = "^2.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

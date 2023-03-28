@@ -1,0 +1,7 @@
+/venv/
+.venv/
+.vscode
+videoscribe/*
+__pycache__
+requirements.txt
+*sa.json

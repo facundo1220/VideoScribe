@@ -1,0 +1,6 @@
+.venv
+*.gif
+.vscode
+.python-version
+__pycache__
+*-sa.json

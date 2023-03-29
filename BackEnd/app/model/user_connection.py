@@ -170,7 +170,7 @@ class UserConnection:
                 JOIN videos ON users.idUser = videos.idUser
                 WHERE  videos.idVideo = %s
                 """
-            cur.execute(query, (idVideo))
+            cur.execute(query, (idVideo,))
             data = cur.fetchone()
             return data
 

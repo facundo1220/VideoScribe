@@ -5,7 +5,7 @@ services:
     ports:
       - "80:5173"
   backend:
-    image: "julianvega/videoscribe-backend:1.1"
+    image: "julianvega/videoscribe-backend:1.2"
     env_file:
       - videoscribe.env
     ports:
